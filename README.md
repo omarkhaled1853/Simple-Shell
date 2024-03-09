@@ -12,4 +12,4 @@ The Simple Shell is a minimalistic command-line interpreter program written in C
 * **Logging:** Log child process terminations to a log file.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License
