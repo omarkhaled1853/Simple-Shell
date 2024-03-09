@@ -22,6 +22,7 @@ void parse_input(){
     }
 }
 
+// replace variables after $ sign
 void replace_variable() {
 char *dollar_sign = strchr(line, '$');
     if (dollar_sign != NULL) {
@@ -64,7 +65,6 @@ char *dollar_sign = strchr(line, '$');
 // splite input line in the spaces
 void evaluate_expression(){
     replace_variable();
-    printf("%s\n", line);
     args = malloc(max_words * sizeof(char*));
     if (args == NULL) {
         printf("Memory allocation failed!\n");
