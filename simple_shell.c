@@ -101,6 +101,7 @@ bool shell_builtin(){
 bool check_background_process(){
     for(int i = 0; args[i] != NULL; i++){
         if(strcmp(args[i], "&") == 0){
+            args[i] = NULL;
             return true;
         }
     }
